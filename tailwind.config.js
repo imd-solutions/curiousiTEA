@@ -1,0 +1,35 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // NOTE: Update this to include the paths to all files that contain Nativewind classes.
+  content: ["./App.tsx", "app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#FE8C00",
+        white: {
+          default: "#ffffff",
+          100: "#fafafa",
+          200: "#FE8C00",
+        },
+        gray: {
+          100: "#878787",
+          200: "#878787",
+        },
+        dark: {
+          100: "#181C2E",
+        },
+        error: "#F14141",
+        success: "#2F9B65",
+      },
+    fontFamily: {
+      quicksand: ["Quicksand-Regular", "sans-serif"],
+      "quicksand-bold": ["Quicksand-Bold", "sans-serif"],
+      "quicksand-semibold": ["Quicksand-SemiBold", "sans-serif"],
+      "quicksand-light": ["Quicksand-Light", "sans-serif"],
+      "quicksand-medium": ["Quicksand-Medium", "sans-serif"],
+    },
+    },
+  },
+  plugins: [],
+}
