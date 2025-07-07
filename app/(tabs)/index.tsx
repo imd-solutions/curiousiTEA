@@ -2,9 +2,9 @@ import {FlatList, Pressable, Text, View, Image, TouchableOpacity} from "react-na
 import {SafeAreaView} from "react-native-safe-area-context";
 import {images, offers} from "@/constants";
 import {Fragment} from "react";
-import {ListRenderItemInfo} from "@/types/ListRenderItemInfo";
+import {RenderItem} from "@/type";
 import cn from "clsx"
-import CartButton from "@/components/CartButton";
+import CartButton from "@/components/Cart/button";
 
 export default function Index() {
   return (
@@ -12,7 +12,7 @@ export default function Index() {
 
           <FlatList
               data={offers}
-              renderItem={({ item, index }: ListRenderItemInfo) => {
+              renderItem={({ item, index }: RenderItem) => {
                   const isEven: boolean = index % 2 === 0
                   return (
                       <View>

@@ -2,7 +2,7 @@ import {View, Text, TouchableOpacity, Image} from 'react-native'
 import React from 'react'
 import {images} from "@/constants";
 
-const CartButton = () => {
+const Button = () => {
     const totalItems = 10;
     return (
         <TouchableOpacity className="cart-btn" onPress={() => {}}>
@@ -15,4 +15,4 @@ const CartButton = () => {
         </TouchableOpacity>
     )
 }
-export default CartButton
+export default Button
